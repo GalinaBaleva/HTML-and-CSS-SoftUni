@@ -24,11 +24,16 @@ a {
                border-width: 2px;
                font-size: 12px;
                cursor: pointer;
+               background-color: transparent;
                outline: none;
 
 }
 .hover{
                color: rgb(51, 51, 51);
+}
+.fill{
+               background-color: black;
+               color: white;
 }
 .fill.hover{
                color: rgb(251, 251, 251);
