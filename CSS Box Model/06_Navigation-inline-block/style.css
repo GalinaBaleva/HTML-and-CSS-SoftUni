@@ -1,0 +1,27 @@
+html {
+               font-family: Helvetica, sans-serif;
+}
+
+nav, li, div {
+               display: inline-block;
+}
+
+a {
+               color: rgb(43, 165, 13);
+               text-decoration: none;
+               margin: 15px;
+}
+
+header div{
+               margin: 40px;
+               font-weight: bold;
+               font-size: 45px;
+}
+header {
+               border-bottom: 2px solid black;
+}
+
+
+h1{
+               font-weight: normal;
+}
