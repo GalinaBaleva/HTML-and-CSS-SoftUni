@@ -77,12 +77,114 @@ select {
                }
 }
 
-blockquote{
+body{
+               margin: 30px 40px;
+               background-color: rgb(238, 238, 238);
+}
+
+blockquote {
                font-family: Georgia, serif;
 }
 
-h1, h2{
+h1,
+h2 {
                font-family: Georgia, serif;
                size: 1em;
+               line-height: 1.2;
+               padding: 20px 0px 10px;
 }
+
+
+.menu {
+               width: 100%;
+               
+
+}
+
+.logo,
+.logo-menu {
+               display: inline-block;
+}
+
+.logo {
+               width: 70%;
+               font-weight: bold;
+               font-size: 30px;
+}
+
+.logo-menu {
+               right: 0;
+               width: 28%;
+               color: green;
+
+
+}
+
+.logo-menu ul li {
+               display: inline-block;
+               padding: 10px;
+}
+
+main, aside{
+               display: inline-block;
+}
+main{
+               width: 74%;
+}
+aside{
+               vertical-align: top;
+               width: 25%;
+}
+aside h3{
+               font-weight: normal;
+}
+aside nav li a{
+               color: rgb(0, 102, 0);
+               text-decoration: none;
+
+}
+aside nav ul{
+               list-style: square;
+}
+
+.right-float{
+               float: right;
+               border: 5px solid black;
+               padding: 6px;
+               background-color: rgb(255, 255, 255);
+               box-shadow: 0px 0px 20px 0px gray;
+               width: 150px;
+}
+
+.citat{
+               font-style: italic;
+               line-height: 2em;
+               display: inline-block;
+               width: 39%;   
+               border-left: 3px solid lightgray;
+               padding-left: 50px;
+               font-size: small;
+               vertical-align: top;
+}
+.citat p{
+               text-align: right;
+               padding: 10px;
+}
+.citat-befor{
+               width: 60%;
+               display: inline-block;
+}
+
+.left-float{
+               float: left;
+               border: 5px solid black;
+               padding: 6px;
+               background-color: rgb(255, 255, 255);
+               box-shadow: 0px 0px 20px 0px gray;
+               width: 150px;
+               margin: 10px;
+}
+
+
+
 
