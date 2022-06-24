@@ -25,6 +25,8 @@ ol[role='list'] {
                list-style: none;
 }
 
+
+
 /* Set core root defaults */
 html:focus-within {
                scroll-behavior: smooth;
@@ -74,29 +76,30 @@ select {
 }
 
 
-html{
+html {
                box-sizing: border-box;
 }
 
-body{
+body {
                text-align: center;
 
 }
-.container{
+
+.container {
                display: flex;
                justify-content: center;
                align-content: center;
-               max-width: 65vw; 
+               max-width: 65vw;
                margin: 5% 15%;
-                       
+
 }
 
-section{
+section {
                display: flex;
-               flex-wrap: wrap; 
+               flex-wrap: wrap;
 }
 
-span{
+span {
                border: 1px solid black;
                padding: 20px;
 }
@@ -104,20 +107,21 @@ span{
 
 
 
-section.notes{
+section.notes {
                flex-direction: column;
-               
+
 
 }
-section.notes span{
+
+section.notes span {
                display: flex;
                flex-grow: 1;
 }
 
-span.week-part{
+span.week-part {
                flex-basis: 100%;
 }
 
-span.days{
+span.days {
                flex-grow: 1;
 }
