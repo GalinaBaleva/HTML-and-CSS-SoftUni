@@ -1,0 +1,139 @@
+/* Box sizing rules */
+*,
+*a::before,
+*::after {
+               box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+               margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+               list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+               scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+               min-height: 100vh;
+               text-rendering: optimizeSpeed;
+               line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+               text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+               max-width: 100%;
+               display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+               font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+               html:focus-within {
+                              scroll-behavior: auto;
+               }
+
+               *,
+               *::before,
+               *::after {
+                              animation-duration: 0.01ms !important;
+                              animation-iteration-count: 1 !important;
+                              transition-duration: 0.01ms !important;
+                              scroll-behavior: auto !important;
+               }
+}
+body{
+               font-family: Helvetica, sans-serif;       
+}
+
+section{
+               max-width: 1000px;
+               background-color: #F6F8F9;
+               margin: 40px auto; 
+               padding: 60px;  
+               position: relative;        
+}
+
+
+article, img{
+               display: inline-block;
+}
+
+article{
+               width: 40%;
+}
+
+img{
+               width: 30%;
+               position: absolute;
+               right: 10%;
+               bottom: 0;
+}
+
+
+
+
+.first-paragraf{
+               color: #2A3340;
+               font-size: 10px;
+               padding: 10px 0;
+}
+
+h1{
+         color: #29323F;   
+         font-weight: normal;
+         font-size: 30px;   
+         padding-bottom: 25px;
+}
+
+.text{
+               color: #666F78;
+               line-height: 2rem;
+}
+
+.btn{
+               margin-right: 10px;
+               margin: 25px 10px 20px 0;
+               padding: 8px 18px;
+               border-radius: 5px;
+               background-color: transparent;
+               font-weight: bold;
+               color: #343C49;
+               border: 1px solid #0D0E10;
+}
+
+#contact{
+               background-color: #7573F6;
+               color: #F8F8FE;
+               border: 1px solid #7573F6;;
+}
