@@ -90,7 +90,7 @@ body {
                               'footer footer footer footer';
                gap: 15px;
                margin: 20px 40px;
-               overflow: hidden;
+
 
 }
 
@@ -111,12 +111,13 @@ header nav {
                vertical-align: middle;
 }
 
-header nav ul li{
+header nav ul li {
                display: inline-block;
                font-size: 20px;
                align-self: center;
                margin-right: 60px;
 }
+
 header nav ul li a {
                text-decoration: none;
                color: rgb(53, 100, 164);
@@ -158,3 +159,27 @@ footer p {
                padding: 10px 10px 0;
 }
 
+@media (max-width: 500px) {
+               body {
+                              display: grid;
+                              grid-template-areas:
+                                             "header header"
+                                             "aside aside"
+                                             "main main"
+                                             "footer footer"
+               }
+
+               header nav {
+                              display: block;
+                              width: 100%;
+               }
+
+               header nav ul li {
+                              display: block;
+                              text-align: center;
+                              line-height: 3;
+               }
+               footer{
+                              height: 40px;
+               }
+}
