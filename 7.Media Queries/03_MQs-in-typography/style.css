@@ -1,0 +1,227 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+               box-sizing: border-box;
+}
+
+*body {
+               box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+               margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+               list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+               scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+               min-height: 100vh;
+               text-rendering: optimizeSpeed;
+               line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+               text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+               max-width: 100%;
+               display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+               font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+               html:focus-within {
+                              scroll-behavior: auto;
+               }
+
+               *,
+               *::before,
+               *::after {
+                              animation-duration: 0.01ms !important;
+                              animation-iteration-count: 1 !important;
+                              transition-duration: 0.01ms !important;
+                              scroll-behavior: auto !important;
+               }
+}
+
+body {
+               margin: 40px 150px;
+               background-color: rgb(238, 238, 238);
+}
+
+blockquote {
+               font-family: Georgia, serif;
+}
+
+h1,
+h2 {
+               font-family: Georgia, serif;
+               size: 1em;
+               line-height: 1.2;
+               padding: 20px 0px 10px;
+               font-weight: normal;
+}
+
+
+.menu {
+               width: 100%;
+
+
+}
+
+.logo {
+               font-family: sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+}
+
+.menu {
+               border-bottom: 1px solid black;
+               padding-bottom: 20px;
+}
+
+.right-float {
+               float: right;
+               border: 5px solid black;
+               padding: 6px;
+               background-color: rgb(255, 255, 255);
+               box-shadow: 0px 0px 20px 0px gray;
+               width: 130px;
+               margin: 0px 10px 10px;
+}
+
+.citat {
+               font-style: italic;
+               line-height: 2em;
+               display: inline-block;
+               width: 39%;
+               border-left: 3px solid lightgray;
+               padding-left: 50px;
+               font-size: small;
+               vertical-align: top;
+}
+
+.citat p {
+               text-align: right;
+               padding: 10px;
+}
+
+.citat-befor {
+               width: 60%;
+               display: inline-block;
+}
+
+.left-float {
+               float: left;
+               border: 5px solid black;
+               padding: 6px;
+               background-color: rgb(255, 255, 255);
+               box-shadow: 0px 0px 20px 0px gray;
+               width: 150px;
+               margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+               body {
+                              margin: 40px 30px;
+                              background-color: rgb(238, 238, 238);
+               }
+
+               .citat {
+                              font-style: italic;
+                              line-height: 2em;
+                              display: inline-block;
+                              width: 39%;
+                              border-left: 3px solid lightgray;
+                              padding-left: 50px;
+                              font-size: small;
+                              vertical-align: top;
+                              margin-bottom: 20px;
+               }
+
+               .citat-befor {
+                              width: 50%;
+                              display: inline-block;
+                              margin-right: 20px;
+               }
+}
+
+@media all and (max-width: 320px) {
+               .logo {
+                              font-size: 34px;
+               }
+
+               .menu {
+                              border-bottom: 2px solid black;
+                              padding-bottom: 15px;
+               }
+
+               .div_for_flex {
+                              display: flex;
+                              flex-direction: column;
+               }
+
+               .citat {
+                              width: 100%;
+                              border-left: 3px solid lightgray;
+                              padding-left: 30px;
+                              font-size: small;
+                              vertical-align: top;
+                              order: -1;
+               }
+
+               .citat-befor {
+                              width: 100%;
+                              order: 1;
+               }
+
+               .right-float {
+                              float: none;
+                              width: 180px;
+                              margin: 10px 10px 10px 0;
+                              box-shadow: 0px 0px 13px 0px gray;
+                              border: 2px solid black;
+               }
+
+               .left-float {
+                              float: none;
+                              margin: 10px 10px 10px 0;
+                              box-shadow: 0px 0px 13px 0px gray;
+                              border: 2px solid black;
+                              width: 180px;
+               }
+}
