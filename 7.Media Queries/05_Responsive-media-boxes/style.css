@@ -72,7 +72,8 @@ select {
                               scroll-behavior: auto !important;
                }
 }
-html{
+
+html {
                font-family: Helvetica, sans-serif;
 }
 
@@ -108,10 +109,10 @@ h3 {
 
 .second {
                height: 50vh;
-               margin: 5px 25px ;
+               margin: 5px 25px;
                position: absolute;
-               
-               
+
+
 }
 
 img {
@@ -122,7 +123,7 @@ img {
                border-top-right-radius: 5px;
 }
 
-.second a{
+.second a {
                background-color: rgb(0, 153, 0);
                border: 1px solid rgb(0, 153, 0);
                text-decoration: none;
@@ -132,4 +133,35 @@ img {
                right: 0;
                margin: 10px;
                border-radius: 5px;
+}
+
+
+@media all and (max-width: 1024px) {
+              
+
+               .card {
+                              height: 78vh;
+                              width: 40vw;
+               }
+}
+
+@media (max-width: 1024px) {
+               .card {
+                              height: 74vh;
+                              width: 39vw;
+               }
+}
+
+@media all and (max-width: 768px) {
+               .card {
+                              height: 79vh;
+                              width: 43vw;
+               }
+}
+
+@media all and (max-width: 320px) {
+               .card {
+                              height: 85vh;
+                              width: 84vw;
+               }
 }
