@@ -90,6 +90,7 @@ body {
                max-height: 1500px;
                border-radius: 5px;
                border-top-left-radius: 5px;
+               box-shadow: 0 0 5px 1px gray;
 }
 
 h3 {
