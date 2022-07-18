@@ -60,15 +60,11 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 
 html {
-               background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255, .9)),url(./120858309-vector-golden-linear-texture-geometric-seamless-pattern-with-diamond-shapes-rhombuses-thin-lines-abs.jpg) no-repeat center center fixed;
+               background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url(./120858309-vector-golden-linear-texture-geometric-seamless-pattern-with-diamond-shapes-rhombuses-thin-lines-abs.jpg) no-repeat center center fixed;
                background-size: cover;
 }
 
-header{
-               display: flex;
-               justify-items: center;
-               justify-content: center;
-}
+header {}
 
 .logo,
 nav {
@@ -77,16 +73,19 @@ nav {
 
 .logo {
                width: 20%;
+               margin: 15px 0 0 40px;
+               vertical-align: bottom;
 }
 
 header nav {
                width: 75%;
                text-align: right;
+
 }
 
 .logo h1 {
                color: rgb(128, 0, 128);
-               font-size: 40px;
+               font-size: 45px;
                font-weight: normal;
 }
 
@@ -103,7 +102,7 @@ header ul li {
                display: inline-block;
                margin-right: 30px;
                font-family: sans-serif;
-               font-size: 15px;
+               font-size: 20px;
 
 
 }
@@ -111,6 +110,8 @@ header ul li {
 header ul li a {
                text-decoration: none;
                color: rgb(56, 56, 56);
+
+
 }
 
 /* And of header part */
@@ -121,17 +122,28 @@ header ul li a {
 }
 
 #need-webside-heading {
-               font-size: 30px;
+               font-size: 50px;
                font-weight: normal;
                margin-bottom: 10px;
+               display: inline-block;
+               width: 60%;
 }
 
 #need-webside-content {
+               font-size: 20px;
                display: inline-block;
+               width: 60%;
 }
 
 #icon {
 
-               font-size: 150px;
+               font-size: 160px;
+               display: inline-block;
+               width: 30%;
                color: black;
+               float: right;
+               vertical-align: middle;
+}
+#need-webside-button{
+               
 }
