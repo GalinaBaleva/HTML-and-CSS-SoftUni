@@ -121,29 +121,49 @@ header ul li a {
                margin: 100px 150px;
 }
 
-#need-webside-heading {
+#need-webside-heading, #our-teem-heading {
                font-size: 50px;
                font-weight: normal;
                margin-bottom: 10px;
                display: inline-block;
-               width: 60%;
+               max-width: 60%;
 }
 
 #need-webside-content {
                font-size: 20px;
                display: inline-block;
-               width: 60%;
+               position: relative;
+               width: 70%;
 }
 
 #icon {
-
-               font-size: 160px;
+               font-size: 180px;
                display: inline-block;
+               position: absolute;
                width: 30%;
                color: black;
-               float: right;
-               vertical-align: middle;
+               right: -50%;
+top: -79%;
 }
-#need-webside-button{
+
+#need-webside-button {
+               border-radius: 3px;
+               background-color: transparent;
+               margin-top: 30px;
+               border: 2px solid rgb(56, 56, 56);
+               display: block;
+}
+
+#need-webside-button a {
+               color: rgb(56, 56, 56);
+               text-decoration: none;
+               padding: 10px 20px;
+               font-size: 20px;
+}
+
+/* and of the section "need a website" */
+
+#our-teem-heading,  {
                
+
 }
