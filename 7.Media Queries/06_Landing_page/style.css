@@ -208,6 +208,7 @@ header ul li a {
                margin: 30px 0 2px 0;
                font-size: 20px;
 }
+
 .our-teem-employee-profession {
                margin-bottom: 10px;
                font-size: 20px;
@@ -226,3 +227,37 @@ header ul li a {
 /* and of the section "our teem" */
 
 
+#sing-in {
+               background-color: rgb(104, 52, 123);
+               padding: 50px 0;
+               text-align: center;
+}
+
+#sing-in-heading {
+               font-size: 50px;
+               color: rgb(255, 255, 255);
+               font-weight: normal;
+}
+
+
+
+#sing-in-heading::after {
+               content: '';
+               border-bottom: 3px solid black;
+               width: 10%;
+               height: 0px;
+               display: block;
+               margin: 0 auto;
+}
+#sing-in-input {
+               margin-top: 40px;
+               width: 32%;
+               border: 1px solid rgb(51, 51, 51);
+               border-radius: 3px;
+
+}
+
+#sing-in-button{
+               border: 1px solid rgb(51, 51, 51);
+               background-color: white;
+}
