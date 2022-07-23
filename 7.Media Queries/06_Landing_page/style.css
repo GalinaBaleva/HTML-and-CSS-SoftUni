@@ -114,13 +114,13 @@ header ul li a {
 
 /* And of header part */
 
-#need-webside {
+.need-webside {
                width: 70%;
                margin: 100px 150px;
 }
 
-#need-webside-heading,
-#our-teem-heading {
+.need-webside-heading,
+.our-teem-heading {
                font-size: 50px;
                font-weight: normal;
                margin-bottom: 10px;
@@ -128,7 +128,7 @@ header ul li a {
                max-width: 60%;
 }
 
-#need-webside-content {
+.need-webside-content {
                font-size: 20px;
                display: inline-block;
                position: relative;
@@ -145,7 +145,7 @@ header ul li a {
                top: -79%;
 }
 
-#need-webside-button {
+.need-webside-button {
                border-radius: 3px;
                background-color: transparent;
                margin-top: 30px;
@@ -153,22 +153,23 @@ header ul li a {
                display: block;
 }
 
-#need-webside-button a {
+.need-webside-button a {
                color: rgb(56, 56, 56);
                text-decoration: none;
                padding: 10px 20px;
                font-size: 20px;
 }
 
+
 /* and of the section "need a website" */
 
-#our-teem {
+.our-teem, .testimonials {
                display: grid;
                grid-template-areas:
                               "heading heading heading"
                               "article article article"
                               "article article article";
-               margin: 0 60px 200px 60px;
+               padding: 0 60px 141px 60px;;
                justify-items: center;
                justify-content: space-around;
                grid-auto-columns: 1fr;
@@ -177,13 +178,13 @@ header ul li a {
 }
 
 
-#our-teem-heading {
+.our-teem-heading, .testimonials-heading {
 
                grid-area: heading;
 }
 
 
-#our-teem-heading::after {
+.our-teem-heading::after {
 
                content: '';
                border-bottom: 3px solid black;
@@ -231,6 +232,7 @@ header ul li a {
                background-color: rgb(104, 52, 123);
                padding: 50px 0;
                text-align: center;
+               margin-bottom: 100px;
 }
 
 #sing-in-heading {
@@ -260,4 +262,12 @@ header ul li a {
 #sing-in-button{
                border: 1px solid rgb(51, 51, 51);
                background-color: white;
+               padding: 0 12px;
+}
+
+/* and of the section "sing-in" */
+
+footer{
+               display: flex;
+               flex-grow: 1fr 1fr 1fr;
 }
