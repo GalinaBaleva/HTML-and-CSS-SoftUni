@@ -81,7 +81,10 @@ header nav {
 
 }
 
-.logo h1 {
+.logo h1 {  
+
+
+               
                color: rgb(128, 0, 128);
                font-size: 45px;
                font-weight: normal;
@@ -163,13 +166,15 @@ header ul li a {
 
 /* and of the section "need a website" */
 
-.our-teem, .testimonials {
+.our-teem,
+.testimonials {
                display: grid;
                grid-template-areas:
                               "heading heading heading"
                               "article article article"
                               "article article article";
-               padding: 0 60px 141px 60px;;
+               padding: 0 60px 141px 60px;
+               ;
                justify-items: center;
                justify-content: space-around;
                grid-auto-columns: 1fr;
@@ -178,7 +183,8 @@ header ul li a {
 }
 
 
-.our-teem-heading, .testimonials-heading {
+.our-teem-heading,
+.testimonials-heading {
 
                grid-area: heading;
 }
@@ -251,6 +257,7 @@ header ul li a {
                display: block;
                margin: 0 auto;
 }
+
 #sing-in-input {
                margin-top: 40px;
                width: 32%;
@@ -259,7 +266,7 @@ header ul li a {
 
 }
 
-#sing-in-button{
+#sing-in-button {
                border: 1px solid rgb(51, 51, 51);
                background-color: white;
                padding: 0 12px;
@@ -267,7 +274,7 @@ header ul li a {
 
 /* and of the section "sing-in" */
 
-footer{
+footer {
                display: flex;
                flex-grow: 1fr 1fr 1fr;
 }
