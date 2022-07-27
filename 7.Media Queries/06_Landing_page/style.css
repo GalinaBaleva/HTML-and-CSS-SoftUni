@@ -81,10 +81,10 @@ header nav {
 
 }
 
-.logo h1 {  
+.logo h1 {
 
 
-               
+
                color: rgb(128, 0, 128);
                font-size: 45px;
                font-weight: normal;
@@ -272,9 +272,66 @@ header ul li a {
                padding: 0 12px;
 }
 
+.testimonials {
+
+               padding-bottom: 150px;
+               box-shadow: 0px 0px 30px 1px lightgray;
+}
+
+
 /* and of the section "sing-in" */
 
 footer {
                display: flex;
-               flex-grow: 1fr 1fr 1fr;
+               justify-content: center;
+               align-items: flex-start;
+               padding-top: 30px;
+               font-size: 20px;
+}
+
+.first-section,
+.second-section {
+               flex-basis: 30%;
+}
+
+.first-section {
+               padding-right: 70px;
+               
+}
+
+.first-section h3 {
+               font-weight: normal;
+               font-size: 35px;
+               padding-bottom: 10px;
+}
+
+.second-section {
+               display: flex;
+               flex-wrap: wrap;
+               flex-direction: column;
+}
+
+.second-section h4 {
+               font-weight: normal;
+               font-size: 30px;
+}
+
+.second-section ul {
+               align-self: flex-start;
+               padding-left: 0px;
+               margin-top: 0px;
+}
+
+.second-section ul li {
+               display: inline-block;
+               width: 48%;
+}
+
+.second-section ul li a {
+               text-decoration: none;
+               color: black;
+}
+
+.icons{
+               padding-right: 10px;
 }
