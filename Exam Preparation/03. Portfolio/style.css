@@ -1,0 +1,225 @@
+/* Box sizing rules */
+*,
+*a::before,
+*::after {
+               box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+               margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+               list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+               scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+               min-height: 100vh;
+               text-rendering: optimizeSpeed;
+               line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+               text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+               max-width: 100%;
+               display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+               font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+               html:focus-within {
+                              scroll-behavior: auto;
+               }
+
+               *,
+               *::before,
+               *::after {
+                              animation-duration: 0.01ms !important;
+                              animation-iteration-count: 1 !important;
+                              transition-duration: 0.01ms !important;
+                              scroll-behavior: auto !important;
+               }
+}
+
+body {
+               /* display: flex;
+               flex-direction: column; */
+               margin: 30px 40px;
+               font-family: "Raleway", sans-serif;
+}
+
+.nav,
+.hero,
+.camera,
+.girl-photo,
+.bridge-section,
+.galery,
+.form,
+footer {
+               background-color: rgb(239, 239, 239);
+}
+
+.hero,
+.camera,
+.gril-photo,
+.bridge-section,
+.galery {
+               margin-bottom: 30px;
+}
+
+.non-bold-heading {
+               font-weight: normal;
+}
+
+.non-bold-heading,
+.bold-heading {
+               display: inline-block;
+               font-size: 35px;
+               padding-bottom: 20px;
+}
+
+/* nav section */
+.nav {
+               text-align: right;
+               padding: 20px 30px 0 30px;
+}
+
+.nav h1 {
+               font-weight: normal;
+}
+
+.nav h1 i {
+               padding-left: 10px;
+}
+
+/* Hero section */
+
+main {
+               display: flex;
+               flex-direction: column;
+}
+
+
+.hero,
+.bridge-section,
+.camera,
+.form {
+               position: relative;
+               padding: 80px 100px 80px 100px
+}
+
+
+.discripion {
+               max-width: 40%;
+               font-style: italic;
+               line-height: 1.75rem;
+               font-size: 13px;
+}
+
+.line {
+               content: '';
+               border-right: 1px solid rgb(26, 26, 26);
+               height: 100px;
+
+}
+
+.hero img, .bridge-section img {
+               position: absolute;
+               right: 100px;
+               bottom: 0;
+               max-width: 45%;
+}
+
+/* camera section */
+
+.camera {
+               display: flex;
+               flex-direction: row-reverse;
+               justify-content: space-around;
+               gap: 5%;
+}
+
+.camera p {
+               max-width: 100%;
+}
+
+.vertical-line {
+               background-color:  #4D4D4D;
+               height: 60px;
+               width: 1px;
+               margin-top: 20px;
+}
+
+
+.camera img {
+               max-width: 45%;
+}
+
+.camera h2 {
+               position: relative;
+}
+
+.horisontal-line {
+               background-color: #4D4D4D;
+               height: 1px;
+               width: 50px;
+               display: inline-block;
+               position: relative;
+               bottom: 10px;
+               left: 0;
+               margin-right: 22px;
+}
+.social-medias i{
+               display: inline-block;
+               font-size: 13px;
+               margin: 40px 10px 0 0;
+               background-color: #909090;
+               color: white;
+               padding: 10px 15px;
+
+}
+
+/* girl section */
+
+.gril-photo img{
+               max-width: 100%;
+               object-fit: cover;
+}
+
+/* bridge section */
+
+.bridge-section{
+               
+}
