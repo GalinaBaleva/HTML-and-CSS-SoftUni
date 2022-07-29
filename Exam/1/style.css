@@ -76,7 +76,7 @@ select {
 }
 
 body {
-               font-family: Courgette, serif;
+               font-family: "Courgette", serif;
                background-color: rgb(245, 245, 245);
                text-align: center;
                display: flex;
@@ -118,9 +118,9 @@ article {
                border-radius: 15px;
                flex-basis: 30%;
                justify-self: center;
-               justify-content: space-between;
                display: flex;
                flex-direction: column;
+               max-height: 431px;
 
 }
 
@@ -137,10 +137,7 @@ article {
 }
 
 .heding-article {
-               /* padding: 10px; */
                border-bottom: 2px solid rgb(214, 77, 83);
-               /* font-size: 23px;
-               width: 70%; */
                margin: 10px;
 }
 
