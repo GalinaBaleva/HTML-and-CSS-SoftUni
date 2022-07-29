@@ -137,7 +137,7 @@ main {
 .camera,
 .form {
                position: relative;
-               padding: 80px 100px 80px 100px
+               padding: 80px 100px 150px 100px
 }
 
 
@@ -155,7 +155,8 @@ main {
 
 }
 
-.hero img, .bridge-section img {
+.hero img,
+.bridge-section img {
                position: absolute;
                right: 100px;
                bottom: 0;
@@ -176,7 +177,7 @@ main {
 }
 
 .vertical-line {
-               background-color:  #4D4D4D;
+               background-color: #4D4D4D;
                height: 60px;
                width: 1px;
                margin-top: 20px;
@@ -201,7 +202,8 @@ main {
                left: 0;
                margin-right: 22px;
 }
-.social-medias i{
+
+.social-medias i {
                display: inline-block;
                font-size: 13px;
                margin: 40px 10px 0 0;
@@ -213,13 +215,82 @@ main {
 
 /* girl section */
 
-.gril-photo img{
+.gril-photo img {
                max-width: 100%;
                object-fit: cover;
 }
 
 /* bridge section */
 
-.bridge-section{
+.bridge-section img {
+               bottom: 20%;
+               max-width: 44%;
+}
+
+/* galery section */
+.galery {
+               display: flex;
+               position: relative;
+               padding: 200px 0;
+               align-items: center;
+               justify-content: space-around;
+}
+
+.galery img{
                
+               max-width: 35%;
+}
+
+.galery .galery-center-img{
+               position: absolute;
+               max-width: 50%;
+}
+
+/* form sectio */
+
+.form{
+               text-align: center;
+               padding-bottom: 100px;
+
+}
+
+.form p{
+               font-style: italic;
+               padding-bottom: 35px;
+}
+
+form input{
+               border: 1px solid #282828;
+               color: #5D5D5D;
+}
+
+input[placeholder="Your Email"], input[placeholder="Subject"]{
+               width: 25%;     
+               margin-bottom: 20px;  
+               background-color: transparent;      
+}
+
+input[placeholder="Your Email"]{
+              margin-right: 20px;
+              
+}
+
+input[placeholder="Message"]{
+               width: 53%;
+               height: 100px;
+               background-color: transparent;   
+               margin-bottom: 20px;
+}
+
+form button{
+               width: 53%;
+               background-color: black;
+               color: white;
+}
+
+/* footer */
+
+footer{
+               text-align: center;
+               padding-bottom: 10px;
 }
