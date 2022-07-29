@@ -1,0 +1,74 @@
+@media all and (max-width: 600px) {
+
+               main {
+                              width: 100%;
+                              font-size: 15px;
+               }
+
+               main .left-to-right article {
+                              border-radius: 25%;
+                              width: 500px;
+                              height: 400px;
+                              padding: 75px 81px 75px 90px;
+
+               }
+
+               .left-to-right h1 {
+                              font-size: 2rem;
+               }
+
+
+
+               .left-to-right:first-child {
+                              display: flex;
+                              justify-content: center;
+               }
+
+               .left-to-right button {
+                              display: none;
+               }
+
+               main section:nth-child(2) {
+                              display: unset;
+               }
+
+               main section:nth-child(2) h1 {
+                              margin-top: 35px;
+                              font-size: 2rem;
+               }
+
+               main section:nth-child(2) header p {
+                              font-size: 1.5rem;
+               }
+
+               main section:nth-child(2) button {
+                              display: none;
+               }
+
+               main section:nth-child(2) img {
+                              width: 100%;
+               }
+
+               main section:nth-child(4) {
+                              flex-direction: column;
+               }
+
+               .left-to-right:second-child article{
+                              padding-right: 40px;
+                              padding-left: 40px;
+                              padding-top: 0px;
+                              padding-bottom: 15px;
+               }
+
+               form{
+                              position: relative;
+                              left: 18%;
+               }
+
+               #send{
+                              margin-left: 122px;
+               }
+
+
+
+}
