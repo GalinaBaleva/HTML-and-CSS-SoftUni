@@ -1,0 +1,260 @@
+/* Box sizing rules */
+*,
+*a::before,
+*::after {
+               box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+               margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+               list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+               scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+               min-height: 100vh;
+               text-rendering: optimizeSpeed;
+               line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+               text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+               max-width: 100%;
+               display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+               font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+               html:focus-within {
+                              scroll-behavior: auto;
+               }
+
+               *,
+               *::before,
+               *::after {
+                              animation-duration: 0.01ms !important;
+                              animation-iteration-count: 1 !important;
+                              transition-duration: 0.01ms !important;
+                              scroll-behavior: auto !important;
+               }
+}
+
+body {
+               max-width: 98%;
+               margin: 0 50px;
+               font-family: "PT Sans", sans-serif;
+}
+
+header {
+               background: linear-gradient(rgba(15, 15, 15, 0.7), rgb(15, 15, 15, 0.5), rgb(15, 15, 15, 0.3), rgba(15, 15, 15, 0.2)), url(./image/computer-main.jpg);
+               background-size: 100%;
+               background-repeat: no-repeat;
+               background-position: center;
+               color: white;
+               display: flex;
+               flex-direction: column;
+               min-height: 500px;
+               align-items: center;
+               object-fit: cover;
+}
+
+.header-navigation {
+               display: flex;
+               justify-content: space-between;
+               width: 80%;
+               padding-top: 40px;
+               font-size: 20px;
+}
+
+.header-heading {
+               font-size: 45px;
+               margin-top: 50px;
+}
+
+.header-disctioption {
+               max-width: 40%;
+               text-align: center;
+               font-size: 17px;
+}
+
+.header-button {
+               margin-top: 65px;
+               background-color: rgb(0, 208, 142);
+               border: 3px solid rgb(0, 208, 142);
+               color: white;
+               border-radius: 5px;
+               padding: 5px 20px;
+}
+
+.header-button:hover{
+               background-color: transparent;
+               border: 3px solid white;
+               font-weight: bold;
+
+}
+
+header a {
+               text-decoration: none;
+               color: white;
+               margin-top: 65px;
+}
+
+header a i {
+               border: 1px solid white;
+               background-color: white;
+               color: rgb(5, 10, 15);
+               border-radius: 43px;
+               padding: 1px 2px;
+}
+
+/* and of header section */
+
+main{
+               display: grid;
+               grid-template-areas: 
+               "tablet checkbox"
+               "perfectFor pen"
+               "have have";
+}
+.first-section{
+               grid-area: tablet;
+}
+
+.second-section{
+               grid-area: checkbox;
+}
+
+
+
+.forth-section{
+               grid-area: pen;
+}
+
+
+
+firth-section img, forth-section{
+               object-fit: cover;
+               background-position: center;
+               
+}
+
+.second-section {
+               margin: 30px 0 0 40px;
+}
+
+.second-section-heading, .third-section-heading{
+               font-size: 35px;
+}
+
+.second-section-description{
+               font-size: 20px;
+               max-width: 80%;
+}
+
+.second-section ul li{
+               line-height: 2.5rem;
+               color: rgb(55, 66, 75);
+}
+
+.second-section ul li i{
+               color: rgb(0, 208, 142);
+               font-size: 20px;
+               margin-right: 20px;
+}
+/* third section */
+.third-section{
+               grid-area: perfectFor;
+               margin: 40px 0 0 30px;
+               
+}
+
+.third-section-heading {
+               text-align: center;
+               margin-bottom: 30px;
+
+}
+
+.third-section ul{
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+}
+.third-section ul li{
+               flex-basis: 30%;
+               margin-bottom: 20px;
+               color: rgb(0, 208, 142);
+               font-weight: bold;
+}
+ 
+.third-section ul li img{
+               max-width: 50%;
+}
+
+/* have  question section */
+
+.have-question-section{
+               grid-area: have;
+               background-color: rgb(178, 241, 221);
+               text-align: center;
+               padding: 30px 50px 30px 50px;
+
+}
+
+
+.have-question-section section{
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-around;
+}
+
+
+.have-question-section article{
+               flex-basis: 30%;
+               margin-top: 20px;
+}
+
+footer{
+               background-color: rgb(178, 241, 221);
+               text-align: center; 
+               padding-bottom: 20px;
+}
+
+footer a{
+               text-decoration: none;
+               color: black;
+               font-weight: bold;
+}
