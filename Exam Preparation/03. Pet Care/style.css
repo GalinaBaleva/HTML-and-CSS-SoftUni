@@ -199,21 +199,26 @@ header nav ul a {
 
 .services-flex-headings {
                flex-basis: 30%;
+               font-size: 17px;
 }
 
 .services-flex div {
                height: 100%;
-               display: flex;
-               justify-content: center;
-               align-items: center;
-}
-
-.img {
                background-image: url(./images/service-bg.png);
                background-size: 100%;
                background-repeat: no-repeat;
-               align-self: center;
-               flex-basis: 10%;
+               position: relative;
+               min-width: 71%;
+
+}
+
+.img {
+               position: absolute;
+               left: 50%;
+               top: 40%;
+               transform: translate(-50%, -50%);
+               width: 50%;
+
 
 
 
@@ -221,4 +226,5 @@ header nav ul a {
 
 .services-flex-discriptions {
                color: rgb(146, 146, 148);
+               text-align: center;
 }
