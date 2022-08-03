@@ -2,7 +2,7 @@
 *,
 *a::before,
 *::after {
-               box-sizing: border-box;
+        box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -16,37 +16,37 @@ figure,
 blockquote,
 dl,
 dd {
-               margin: 0;
+        margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
-               list-style: none;
+        list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-               scroll-behavior: smooth;
+        scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-               min-height: 100vh;
-               text-rendering: optimizeSpeed;
-               line-height: 1.5;
+        min-height: 100vh;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-               text-decoration-skip-ink: auto;
+        text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-               max-width: 100%;
-               display: block;
+        max-width: 100%;
+        display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -54,177 +54,223 @@ input,
 button,
 textarea,
 select {
-               font: inherit;
+        font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-               html:focus-within {
-                              scroll-behavior: auto;
-               }
+        html:focus-within {
+                scroll-behavior: auto;
+        }
 
-               *,
-               *::before,
-               *::after {
-                              animation-duration: 0.01ms !important;
-                              animation-iteration-count: 1 !important;
-                              transition-duration: 0.01ms !important;
-                              scroll-behavior: auto !important;
-               }
+        *,
+        *::before,
+        *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+        }
 }
 
 body {
-               font-family: "Poppins", serif;
+        font-family: "Poppins", serif;
+        color: rgb(18, 23, 49);
 }
 
 header {
-               display: flex;
-               justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
 }
 
 .logo {
-               flex-basis: 30%;
-               margin: 10px 100px 0 100px;
+        flex-basis: 30%;
+        margin: 10px 100px 0 100px;
 }
 
 header nav {
-               flex-basis: 60%;
+        flex-basis: 60%;
 }
 
 header nav ul {
-               display: flex;
-               justify-content: space-around;
-               margin: 30px 100px;
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 100px;
 
 }
 
 header nav ul a {
-               text-decoration: none;
-               color: rgb(31, 57, 101);
+        text-decoration: none;
+        color: rgb(31, 57, 101);
 }
 
 .hero {
-               background: url(./images/header-bg.png);
-               object-fit: cover;
-               background-position: bottom;
-               position: relative;
-               padding: 101px 0 40px 0;
+        background: url(./images/header-bg.png);
+        object-fit: cover;
+        background-position: bottom;
+        position: relative;
+        padding: 101px 0 40px 0;
 }
 
 .hero img {
-               width: 48%;
-               position: absolute;
-               right: 14%;
-               bottom: -12%;
+        width: 48%;
+        position: absolute;
+        right: 14%;
+        bottom: -12%;
 }
 
 .hero-heading,
 .hero-discription,
 .hero-button {
-               width: 20%;
-               color: white;
-               padding-left: 246px;
-               margin-bottom: 20px;
+        width: 21%;
+        color: white;
+        padding-left: 246px;
+        margin-bottom: 20px;
 }
 
-.hero-heading {
-               font-size: 46px;
-               line-height: 3rem;
+.hero-heading,
+.about-us-heading {
+        font-size: 46px;
+        line-height: 3rem;
 }
 
-.hero-heading span {
-               font-weight: normal;
+.hero-heading span,
+.about-us-heading span {
+        font-weight: normal;
 
 }
 
 .hero-button {
-               color: rgb(239, 57, 21);
-               padding-left: 0px;
-               margin-left: 246px;
-               width: 10%;
-               border-radius: 25px;
-               border: 2px solid rgb(239, 57, 21);
+        color: rgb(239, 57, 21);
+        padding-left: 0px;
+        margin-left: 246px;
+        width: 10%;
+        border-radius: 25px;
+        border: 2px solid rgb(239, 57, 21);
 }
 
 .hero-discription {
-               font-size: 14px;
+        font-size: 14px;
 }
 
 .hero-button {
-               font-size: 12px;
-               font-weight: bold;
-               padding: 5px 10px;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px 10px;
 }
 
 /* and of the first section */
 
 .services {
-               margin: 150px 0;
+        margin: 150px 0 170px 0;
 }
 
 .services-heading {
-               text-align: center;
-               font-size: 30px;
+        text-align: center;
+        font-size: 30px;
 }
 
 .services-discription {
-               text-align: center;
-               color: rgb(165, 165, 166);
-               max-width: 50%;
-               margin: 0 auto;
-               font-size: 11px;
-               margin-bottom: 128px;
+        text-align: center;
+        color: rgb(165, 165, 166);
+        max-width: 50%;
+        margin: 0 auto;
+        font-size: 11px;
+        margin-bottom: 128px;
 }
 
 .services article {
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               margin: 0 146px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 146px;
 }
 
 .services-flex {
-               margin: 0 20px;
-               flex-basis: 30%;
-               font-size: 10px;
-               border-radius: 10px;
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-               padding: 30px;
-               padding-top: 18px;
-               border: 0.1px solid rgb(255, 202, 199);
-               height: 48vh;
+        margin: 0 20px;
+        flex-basis: 30%;
+        font-size: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        padding-top: 18px;
+        border: 0.1px solid rgb(255, 202, 199);
+        height: 48vh;
 }
 
 .services-flex-headings {
-               flex-basis: 30%;
-               font-size: 17px;
+        flex-basis: 30%;
+        font-size: 17px;
 }
 
 .services-flex div {
-               height: 100%;
-               background-image: url(./images/service-bg.png);
-               background-size: 100%;
-               background-repeat: no-repeat;
-               position: relative;
-               min-width: 71%;
+        height: 100%;
+        background-image: url(./images/service-bg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        min-width: 71%;
 
 }
 
 .img {
-               position: absolute;
-               left: 50%;
-               top: 40%;
-               transform: translate(-50%, -50%);
-               width: 50%;
-
-
-
-
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        width: 50%;
 }
 
 .services-flex-discriptions {
-               color: rgb(146, 146, 148);
-               text-align: center;
+        color: rgb(146, 146, 148);
+        text-align: center;
+}
+
+.about-us-discription {
+        color: rgb(135, 136, 143);
+        font-size: 11px;
+}
+
+.about-us-heading,
+.about-us-discription,
+.about-us-button {
+        max-width: 40%;
+}
+
+.about-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 200px;
+        position: relative;
+}
+
+.about-us img {
+        position: absolute;
+        max-width: 38%;
+        left: 167px;
+        top: -56px;
+}
+
+.about-us-heading {
+        font-size: 40px;
+        line-height: 3rem;
+}
+
+.about-us-discription {
+        padding: 20px 0;
+}
+
+.about-us-button {
+        margin-right: 263px;
+        margin-top: 20px;
+        border: 1px solid #f0462f;
+        color: white;
+        background-image: linear-gradient(to right, rgb(240, 67, 50), rgb(238, 90, 4));
+        font-size: 12px;
+        border-radius: 22px;
+        padding: 8px 20px;
 }
