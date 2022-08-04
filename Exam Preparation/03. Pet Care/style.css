@@ -250,9 +250,9 @@ header nav ul a {
 
 .about-us img {
         position: absolute;
-        max-width: 38%;
-        left: 167px;
-        top: -56px;
+        max-width: 34%;
+        left: 246px;
+        top: -92px;
 }
 
 .about-us-heading {
@@ -265,7 +265,7 @@ header nav ul a {
 }
 
 .about-us-button {
-        margin-right: 263px;
+        margin-right: 363px;
         margin-top: 20px;
         border: 1px solid #f0462f;
         color: white;
@@ -273,4 +273,49 @@ header nav ul a {
         font-size: 12px;
         border-radius: 22px;
         padding: 8px 20px;
+}
+
+/*why sectiono*/
+
+.why{
+        text-align: center;
+        margin: 150px 0;
+        background: url(./images/cats-bg.png);
+        min-height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+}
+
+.why-heading{
+        margin-bottom: 30px;
+        font-size: 46px;;
+}
+
+.why-discription{
+        max-width: 40%;
+        font-size: 17px;
+        margin-bottom: 40px;
+}
+
+.why-div{
+        display: flex;
+        justify-content: space-between;
+}
+
+.why-bottom{
+        margin-right: 10px;
+        background-color: white;
+        border: 1px solid white;
+        color: #f0462f;
+        border-radius: 25px;
+        padding: 10px 20px;
+        align-self: center;
+}
+.why-button-prefix{
+        align-self: center;
 }
