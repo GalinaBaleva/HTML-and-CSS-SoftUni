@@ -104,18 +104,24 @@ header nav ul a {
         color: rgb(31, 57, 101);
 }
 
+/* and of menu section */
 .hero {
         background: url(./images/header-bg.png);
         object-fit: cover;
         background-position: bottom;
         position: relative;
-        padding: 101px 0 40px 0;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 54px;
 }
 
 .hero img {
         width: 48%;
         position: absolute;
-        right: 14%;
+        right: 19%;
         bottom: -12%;
 }
 
@@ -130,8 +136,8 @@ header nav ul a {
 
 .hero-heading,
 .about-us-heading {
-        font-size: 46px;
-        line-height: 3rem;
+        font-size: 57px;
+        line-height: 3.5rem;
 }
 
 .hero-heading span,
@@ -150,11 +156,11 @@ header nav ul a {
 }
 
 .hero-discription {
-        font-size: 14px;
+        font-size: 19px;
 }
 
 .hero-button {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: bold;
         padding: 5px 10px;
 }
@@ -167,7 +173,7 @@ header nav ul a {
 
 .services-heading {
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
 }
 
 .services-discription {
@@ -175,21 +181,21 @@ header nav ul a {
         color: rgb(165, 165, 166);
         max-width: 50%;
         margin: 0 auto;
-        font-size: 11px;
+        font-size: 15px;
         margin-bottom: 128px;
 }
 
 .services article {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         margin: 0 146px;
 }
 
 .services-flex {
         margin: 0 20px;
-        flex-basis: 30%;
-        font-size: 10px;
+        flex-basis: 18%;
+        font-size: 15px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -230,7 +236,7 @@ header nav ul a {
 
 .about-us-discription {
         color: rgb(135, 136, 143);
-        font-size: 11px;
+        font-size: 15px;
 }
 
 .about-us-heading,
@@ -256,8 +262,8 @@ header nav ul a {
 }
 
 .about-us-heading {
-        font-size: 40px;
-        line-height: 3rem;
+        font-size: 57px;
+        line-height: 3.5rem;
 }
 
 .about-us-discription {
@@ -279,7 +285,7 @@ header nav ul a {
 
 .why{
         text-align: center;
-        margin: 150px 0;
+        margin: 150px 0 0 0;
         background: url(./images/cats-bg.png);
         min-height: 70vh;
         background-repeat: no-repeat;
@@ -319,3 +325,37 @@ header nav ul a {
 .why-button-prefix{
         align-self: center;
 }
+
+/* footer */
+footer{
+         display: flex;
+         padding: 11px 254px;
+         margin: 73px 0;
+
+}
+
+footer section{
+        flex-basis: 22%;
+        font-size: 14px;   
+        margin: 0 5px; 
+        line-height: 1.8rem;
+}
+
+footer section:nth-child(1){
+        flex-grow: 1;
+}
+
+footer section ul{
+        padding: 0;
+        color: rgb(165, 165, 166);
+}
+
+footer section ul a{
+        text-decoration: none;
+        color: rgb(165, 165, 166);
+}
+
+.footer-headings{
+        font-size: 24px;
+}
+
