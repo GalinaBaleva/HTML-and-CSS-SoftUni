@@ -1,0 +1,26 @@
+@media all and (max-width: 600px) {
+               body {
+                              font-size: 23px;
+               }
+
+               .w3-right {
+                              display: none;
+               }
+
+               .w3-col.m6 {
+                              width: 100%;
+                              font-size: 23px;
+               }
+
+               .w3-large {
+                              font-size: 23px;
+               }
+
+               .w3-col.l6 {
+                              width: 100%;
+               }
+
+               section article:nth-child(1) img{
+                              display: none;
+               }
+}
