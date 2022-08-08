@@ -1,0 +1,286 @@
+/* Box sizing rules */
+*,
+*a::before,
+*::after {
+               box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+               margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+               list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+               scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+               min-height: 100vh;
+               text-rendering: optimizeSpeed;
+               line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+               text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+               max-width: 100%;
+               display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+               font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+               html:focus-within {
+                              scroll-behavior: auto;
+               }
+
+               *,
+               *::before,
+               *::after {
+                              animation-duration: 0.01ms !important;
+                              animation-iteration-count: 1 !important;
+                              transition-duration: 0.01ms !important;
+                              scroll-behavior: auto !important;
+               }
+}
+
+body {
+               font-family: Helvetica, sans-serif;
+}
+
+header {
+               display: flex;
+               justify-content: space-between;
+               margin: 15px 30px 20px 30px;
+}
+
+header nav {
+               flex-basis: 80%;
+}
+
+header div {
+               flex-basis: 52%;
+               display: flex;
+               align-items: center;
+               position: relative;
+}
+
+.logo-heading{
+               padding: 10px;
+               position: relative;
+
+}
+
+.logo-heading::after{
+               content: "";
+               display: block;
+               width: 1px;
+               height: 50px;
+               background: rgb(188, 188, 188);
+               right: 0;
+               top: 10%;
+               position: absolute;
+               
+}
+
+.logo-discription {
+               padding: 10px;
+               color: rgb(92, 87, 73);
+}
+
+header ul {
+               display: flex;
+               justify-content: space-around;
+               margin: 6px;
+               padding: 10px 0;
+               align-items: flex-end;
+
+}
+
+ul li a {
+               text-decoration: none;
+               color: rgb(32, 32, 57);
+               background-color: rgb(236, 236, 236);
+               padding: 25px 30px;
+}
+
+ul li a:hover {
+               color: white;
+               background-color: rgb(226, 78, 42);
+}
+
+/* main section */
+
+.main-section div {
+               background-image: url(./images/banner.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+               height: 73vh;
+               width: 100%;
+}
+
+.main-discription {
+               height: 20vh;
+               color: rgb(240, 182, 187);
+               background-color: rgb(226, 78, 42);
+               text-align: center;
+               padding: 60px 149px 22px 150px;
+
+}
+
+.main-discription a {
+               color: rgb(244, 210, 216);
+}
+
+/* services */
+
+.services {
+               display: flex;
+               align-items: center;
+               justify-content: space-evenly;
+               background-color: rgb(56, 56, 56);
+               padding: 100px 30px 150px 30px;
+}
+
+.services article {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               align-items: center;
+               flex-basis: 22%;
+               height: 40vh;
+               align-self: center;
+               text-align: center;
+               color: white;
+
+}
+
+.fa-solid {
+               font-weight: 950;
+               font-size: 50px;
+               background-color: rgb(226, 78, 42);
+               padding: 27px;
+               color: white;
+}
+
+.services-headings {
+               padding: 30px 0 15px;
+               border-bottom: 1px solid rgb(76, 76, 76);
+               font-weight: normal;
+
+}
+
+.services-discription {
+               color: rgb(107, 100, 87);
+               font-size: 15px;
+               padding-top: 30px;
+}
+
+/* after section */
+
+.after-services {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               padding: 100px 0;
+}
+
+.after-services h2 {
+               color: rgb(85, 85, 85);
+               font-weight: normal;
+               font-size: 37px
+}
+
+.after-services p {
+               color: rgb(167, 163, 162);
+               padding-bottom: 40px;
+}
+
+.after-services button {
+               background-color: rgb(27, 151, 114);
+               color: white;
+               border: 1px solid rgb(27, 151, 114);
+               padding: 16px 39px;
+               font-weight: bold;
+               font-size: 15px;
+               letter-spacing: 3px;
+}
+
+/* section others */
+
+.others {
+               display: flex;
+               align-items: center;
+               justify-content: space-evenly;
+               background-color: rgb(56, 56, 56);
+               padding: 100px 30px 100px 30px;
+}
+
+.others article {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               align-items: center;
+               flex-basis: 22%;
+               height: 30vh;
+               align-self: center;
+               text-align: center;
+               color: white;
+}
+
+.others article h3 {
+               font-weight: normal;
+               font-size: 24px;
+}
+
+
+.others article p {
+               color: rgb(107, 100, 87);
+               font-size: 15px;
+}
+
+/* footer */
+
+footer {
+               background-color: rgb(27, 151, 114);
+}
+
+footer p {
+               padding: 80px;
+               text-align: center;
+               color: rgb(84, 177, 149);
+}
+
+footer p span {
+               color: rgb(156, 206, 180);
+}
