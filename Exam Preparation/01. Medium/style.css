@@ -77,10 +77,12 @@ body{
                padding: 114px 200px 20px 200px;
                /* font-family: Helvetica, sans-serif; */
                overflow: hidden;
+               color: rgb(117, 117, 117);
 }
 
 .headings{
                font-size: Georgia, serif;
+               color: black;
 }
 
 p, button{
@@ -101,6 +103,7 @@ header p{
 main{
                display: flex;
                flex-direction: row;
+               position: relative;
 }
 div{
                flex-basis: 50%;
@@ -127,6 +130,19 @@ button{
 
 .content p span{
                background-color: rgb(206, 253, 233);
+}
+
+main::after{
+               content: "";
+               width: 350px;
+               height: 1px;
+               display: block;
+               background-color: rgb(113, 113, 126);
+               position: absolute;
+               top: 130%;
+               left: 25%;
+
+
 }
 
 
