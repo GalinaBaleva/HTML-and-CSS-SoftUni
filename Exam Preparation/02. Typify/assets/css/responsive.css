@@ -1,0 +1,48 @@
+@media all and (max-width: 600px) {
+
+
+               .banner h2 {
+                              font-size: 1.9em;
+                              width: 90%;
+               }
+
+               .button {
+                              padding: 0 10.5em;
+                          }
+
+               .wrapper>.inner {
+                              margin: 0 auto;
+                              width: 100%;
+               }
+
+               .feature {
+                              padding: 2em 0em 0.1em 0em;
+                              margin-left: 0px;
+                              margin-top: 0px;
+                              width: 95%;
+                              display: block;
+               }
+
+               .wrapper>.inner.narrow {
+                              width: 100%;
+               }
+
+               .grid-form {
+                              flex-wrap: nowrap;
+                              flex-direction: column;
+                              align-items: center;
+               }
+
+               .wrapper {
+                              padding: 0 20px;
+               }
+
+               .grid-form .form-control.narrow {
+                              width: 100%;
+               }
+
+               form {
+                              margin: 0 0 0em 0;
+               }
+
+}
