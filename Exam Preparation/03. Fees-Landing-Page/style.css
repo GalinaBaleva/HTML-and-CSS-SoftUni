@@ -1,0 +1,301 @@
+/* Box sizing rules */
+*,
+*a::before,
+*::after {
+               box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+               margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+               list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+               scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+               min-height: 100vh;
+               text-rendering: optimizeSpeed;
+               line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+               text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+               max-width: 100%;
+               display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+               font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+               html:focus-within {
+                              scroll-behavior: auto;
+               }
+
+               *,
+               *::before,
+               *::after {
+                              animation-duration: 0.01ms !important;
+                              animation-iteration-count: 1 !important;
+                              transition-duration: 0.01ms !important;
+                              scroll-behavior: auto !important;
+               }
+}
+
+body {
+               font-family: "Lato", sans-serif;
+               color: rgb(88, 84, 109);
+}
+
+h1,
+h2,
+h3 {
+               font-family: "Montserrat", sans-serif;
+}
+
+
+/* Header section */
+
+header {
+               display: flex;
+               justify-content: space-between;
+               margin: 20px 100px;
+}
+
+.logo {
+               flex-basis: 20%;
+}
+
+.logo img {
+               max-width: 50%;
+}
+
+header nav {
+               flex-basis: 35%;
+}
+
+header nav ul {
+               display: flex;
+               justify-content: space-around;
+}
+
+header nav ul li a {
+               text-decoration: none;
+               color: rgb(96, 84, 109);
+               font-weight: 700;
+               font-size: 15px;
+
+}
+
+/* First section */
+
+.first-section {
+               height: 50vh;
+               background-color: rgb(84, 84, 109);
+               position: relative;
+}
+
+.first-section img {
+               position: absolute;
+               left: -64px;
+               top: 51px;
+               width: 12%;
+}
+
+.main-heading {
+               text-align: center;
+               color: white;
+               font-size: 30px;
+               font-weight: 500;
+               padding: 50px 0 40px;
+}
+
+.articles {
+               position: absolute;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               top: 42%;
+}
+
+.taxces {
+               flex-basis: 27%;
+               align-self: stretch;
+               border: 1px solid white;
+               background-color: white;
+               color: rgb(88, 84, 109);
+               border-radius: 15px;
+               margin: 10px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: space-between;
+               padding: 30px 0 0 0;
+               text-align: center;
+               min-height: 300px;
+
+}
+
+.taxces-buttons {
+               border-radius: 25px;
+               background-color: rgb(154, 93, 198);
+               border: 1px solid rgb(154, 93, 198);
+               color: white;
+               font-weight: bold;
+               font-size: 14px;
+               padding: 10px 27px;
+               box-shadow: 1px 4px 4px rgb(199 199 199);
+}
+
+.taxces-headings {
+
+               padding-bottom: 15px;
+
+}
+
+.taxces-discription{
+               margin: 0 20px;
+}
+
+.taxces-headings:nth-child(1){
+               padding-bottom: 0px;
+}
+
+.taxces-prices-second,
+.taxces-prices-third {
+               display: flex;
+}
+
+.taxces-prices-first,
+.taxces-prices-second,
+.taxces-prices-third{
+               border-radius: 0 0 15px 15px;
+               flex-basis: 30%;
+               width: 100%;
+               color: white;
+               margin-top: 15px;
+
+
+}
+
+.taxces-div-first-, .taxces-div-discription {
+               margin-top: 10px;
+               font-size: 20px;
+}
+ .taxces-prices-first {
+
+               background: linear-gradient(to right, rgb(3, 154, 61), rgb(75, 214, 128));
+
+}
+
+.taxces-prices-second {
+               background: linear-gradient(to right, rgb(76, 107, 135), rgb(98, 155, 208));
+               justify-content: space-around;
+
+}
+
+.taxces-prices-second div,
+.taxces-prices-third div {
+               align-self: center;
+               align-self: flex-start;
+
+}
+
+.taxces-prices-third {
+               background: linear-gradient(to right, rgb(75, 56, 166), rgb(141, 126, 226));
+               justify-content: space-around;
+               width: 100%;
+}
+
+.divider-vertical {
+               height: 56px;
+               width: 1px;
+               background-color: white;
+              margin-top: 10px;
+}
+
+
+
+/* Second section */
+
+.second-section {
+               padding: 250px 150px 70px;
+}
+
+.services-div {
+               padding: 13px 46px 13px 12px;
+}
+
+.services-div:nth-child(odd) {
+               background-color: rgb(230, 230, 230);
+}
+.services-div:nth-child(even) {
+               background-color: rgb(248, 248, 248);
+}
+
+.services-div:nth-child(1) {
+               border-radius: 9px 0 0 0 ;
+}
+
+.services-div:last-child {
+               border-radius:  0 0 9px 0 ;
+}
+
+.secons-section-heading{
+               margin-bottom: 25px;
+
+}
+
+.second-section-services{
+               padding-top: 30px;
+               margin-right: 96px;
+}
+
+.services-div{
+               display: flex;
+               justify-content: space-between;
+}
+
+.services-div p {
+               flex-basis: 70%;
+}
+
+.services-div img{
+               align-self: flex-start;
+               width: 2%;
+
+}
+
+
+
