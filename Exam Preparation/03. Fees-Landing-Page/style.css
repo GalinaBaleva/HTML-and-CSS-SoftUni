@@ -184,11 +184,11 @@ header nav ul li a {
 
 }
 
-.taxces-discription{
+.taxces-discription {
                margin: 0 20px;
 }
 
-.taxces-headings:nth-child(1){
+.taxces-headings:nth-child(1) {
                padding-bottom: 0px;
 }
 
@@ -199,7 +199,7 @@ header nav ul li a {
 
 .taxces-prices-first,
 .taxces-prices-second,
-.taxces-prices-third{
+.taxces-prices-third {
                border-radius: 0 0 15px 15px;
                flex-basis: 30%;
                width: 100%;
@@ -209,14 +209,16 @@ header nav ul li a {
 
 }
 
-.taxces-div-first-, .taxces-div-discription {
+.taxces-div-first-,
+.taxces-div-discription {
                margin-top: 10px;
                font-size: 20px;
 }
- .taxces-prices-first {
+
+.taxces-prices-first {
 
                background: linear-gradient(to right, rgb(3, 154, 61), rgb(75, 214, 128));
-
+               flex-basis: 27%;
 }
 
 .taxces-prices-second {
@@ -242,7 +244,7 @@ header nav ul li a {
                height: 56px;
                width: 1px;
                background-color: white;
-              margin-top: 10px;
+               margin-top: 10px;
 }
 
 
@@ -260,29 +262,30 @@ header nav ul li a {
 .services-div:nth-child(odd) {
                background-color: rgb(230, 230, 230);
 }
+
 .services-div:nth-child(even) {
                background-color: rgb(248, 248, 248);
 }
 
 .services-div:nth-child(1) {
-               border-radius: 9px 0 0 0 ;
+               border-radius: 9px 0 0 0;
 }
 
 .services-div:last-child {
-               border-radius:  0 0 9px 0 ;
+               border-radius: 0 0 9px 0;
 }
 
-.secons-section-heading{
+.secons-section-heading {
                margin-bottom: 25px;
 
 }
 
-.second-section-services{
+.second-section-services {
                padding-top: 30px;
                margin-right: 96px;
 }
 
-.services-div{
+.services-div {
                display: flex;
                justify-content: space-between;
 }
@@ -291,11 +294,34 @@ header nav ul li a {
                flex-basis: 70%;
 }
 
-.services-div img{
+.services-div img {
                align-self: flex-start;
                width: 2%;
 
 }
 
+/* Postbank section */
+
+.third-section {
+               position: relative;
+               width: 58%;
+               padding: 40px 99px 150px 99px;
+}
 
 
+
+.third-section img {
+               position: absolute;
+               right: -26%;
+               top: 21%;
+               width: 31%;
+}
+
+footer {
+               height: 8vh;
+               background-color: rgb(84, 84, 109);
+               color: rgb(129, 134, 167);
+               text-align: center;
+               padding-top: 1.8%;
+               width: 100%;
+}
