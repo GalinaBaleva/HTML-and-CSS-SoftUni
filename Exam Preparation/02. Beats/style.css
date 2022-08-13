@@ -95,28 +95,6 @@ nav ul li a {
 }
 
 /* main section */
-
-.second img {
-               position: absolute;
-               width: 100%;
-               left: -26px;
-               bottom: 24px;
-}
-
-.third img {
-               width: 94%;
-               position: absolute;
-               right: 17px;
-               top: 28px;
-}
-
-/* fifth section */
-
-.fifth {
-               background-color: rgb(87, 87, 87);
-               height: 400px;
-}
-
 main {
                display: flex;
                flex-wrap: wrap;
@@ -124,13 +102,216 @@ main {
 
 section {
                flex-basis: 50%;
-               height: 660px;
+               height: 692px;
                position: relative;
+               flex-grow: 0;
 }
 
+.first {
+               padding: 126px 0px;
+               width: 50%;
+               height: 529px;
+
+}
+
+.first-heading,
+.first-discription,
+.first-button {
+               margin: 37px 107px 60px 100px;
+}
+
+.first-heading {
+               font-weight: 300;
+               font-size: 63px;
+
+}
+
+.first-button {
+               color: white;
+               background: rgb(255, 0, 0);
+               border: 1px solid rgb(255, 0, 0);
+               border-radius: 25px;
+               padding: 11px 43px;
+}
+
+/* Second section */
+.second img {
+               position: absolute;
+               max-width: 92%;
+               left: -26px;
+               bottom: 24px;
+}
+
+/* Third section */
+
+.third {
+               background-color: rgb(251, 252, 255);
+               height: 601px;
+}
+
+.third img {
+               max-width: 89%;
+               position: absolute;
+               right: 17px;
+               top: 28px;
+}
+
+/* Forth section */
+
+.forth {
+               width: 50%;
+               height: 529px;
+               background-color: rgb(251, 252, 255);
+               padding-top: 50px;
+               height: 601px;
+}
+
+.forth-heading,
+.forth-discription-first,
+.forth-discription-second,
+.forth-prices {
+               margin: 37px 107px 60px 100px;
+}
+
+.forth-heading {
+               font-weight: 300;
+               font-size: 63px;
+               margin-bottom: 0px;
+               margin-right: 181px;
+}
+
+.forth-discription-first {
+               margin-top: 0;
+               text-align: end;
+               margin-right: 181px;
+               font-weight: 300;
+}
+
+.forth-discription-first span {
+               font-weight: bold;
+}
+
+.forth-prices {
+               display: flex;
+               align-items: center;
+}
+
+.price {
+               font-weight: 700;
+               font-size: 45px;
+               margin-right: 20px;
+}
+
+.price-button {
+               color: white;
+               background: rgb(255, 0, 0);
+               border: 1px solid rgb(255, 0, 0);
+               border-radius: 25px;
+               padding: 11px 43px;
+
+}
+
+/* fifth section */
+
 .fifth {
+               background-color: rgb(87, 87, 87);
                flex-basis: 100%;
-               height: 400px;
+               height: 53vh;
+               display: flex;
+               justify-content: center;
+               flex-direction: column;
+               align-items: center;
+}
+
+.fifth article {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+}
+
+.fifth-heading {
+               flex-basis: 100%;
+               font-size: 45px;
+               color: white;
+               font-weight: 100;
+}
+
+.fifth-heading span {
+               font-weight: 600;
+}
+
+.fifth article img {
+               padding-right: 20px;
+}
+
+.fifth a {
+
+               text-decoration: none;
+               color: white;
+               font-weight: 600;
+               font-size: 22px;
+               border-bottom: 1px solid rgb(223, 224, 227);
+               padding-bottom: 10px;
+               letter-spacing: 0.09re
+}
+
+
+
+/* Sixth  section*/
+
+.sixth img {
+               position: absolute;
+               top: -2px;
+               object-fit: cover;
+               width: 100%;
+               height: 100.2%;
+}
+
+.seventh,
+.sixth {
+               height: 694px;
+}
+
+
+
+/* Seventh section */
+
+.seventh {
+               background-color: rgb(218, 218, 218);
+               display: flex;
+               align-items: center;
+}
+
+.seventh div {
+               display: inline-block;
+               margin-left: 85px;
+               line-height: 1.4;
+               color: rgb(72, 72, 72);
+}
+
+.seventh div h2 {
+               font-size: 106px;
+               line-height: 1.1;
+}
+
+.seventh div p span{
+               color: rgb(255, 0, 0);
+               font-weight: 700;
+               
+}
+
+.seventh div p {
+               font-size: 38px;
+               font-weight: 100;
+}
+
+.seventh img {
+               display: inline-block;
+               max-width: 35%;
+               position: absolute;
+               right: 10%;
+               top: 8%;
+
 }
 
 
