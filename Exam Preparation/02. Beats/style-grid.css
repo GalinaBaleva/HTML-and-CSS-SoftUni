@@ -1,0 +1,317 @@
+/* Box sizing rules */
+*,
+*a::before,
+*::after {
+               box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+               margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+               list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+               scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+               text-rendering: optimizeSpeed;
+               line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+               text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+               max-width: 100%;
+               display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+               font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+               html:focus-within {
+                              scroll-behavior: auto;
+               }
+
+               *,
+               *::before,
+               *::after {
+                              animation-duration: 0.01ms !important;
+                              animation-iteration-count: 1 !important;
+                              transition-duration: 0.01ms !important;
+                              scroll-behavior: auto !important;
+               }
+}
+
+body {
+               font-family: 'Open Sans', sans-serif;
+               color: black;
+}
+
+nav {
+               padding: 30px 130px 20px;
+}
+
+ul {
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+}
+
+nav ul li a {
+               text-decoration: none;
+               color: rgb(157, 157, 157);
+               font-weight: 700;
+}
+
+/* main section */
+main {
+               display: grid;
+               grid-template-columns: repeat(2, 50%);
+               grid-template-rows: repeat(2, 2fr) 0.8fr 2fr;
+               grid-column-gap: 0px;
+               grid-row-gap: 0px;
+}
+
+
+
+section {
+               position: relative;
+}
+
+.first {
+               padding: 126px 0px;
+               width: 100%;
+}
+
+.first-heading,
+.first-discription,
+.first-button {
+               margin: 37px 80px 60px 100px;
+}
+
+.first-heading {
+               font-weight: 300;
+               font-size: 63px;
+
+}
+
+.first-button {
+               color: white;
+               background: rgb(255, 0, 0);
+               border: 1px solid rgb(255, 0, 0);
+               border-radius: 25px;
+               padding: 11px 43px;
+}
+
+/* Second section */
+.second img {
+               position: absolute;
+               max-width: 92%;
+               left: -26px;
+               bottom: 136px;
+}
+
+/* Third section */
+
+.third {
+               background-color: rgb(251, 252, 255);
+}
+
+.third img {
+               max-width: 89%;
+               position: absolute;
+               right: 17px;
+               top: 74px;
+}
+
+/* Forth section */
+
+.forth {
+               width: 100%;
+               background-color: rgb(251, 252, 255);
+               padding-top: 106px;
+}
+
+.forth-heading,
+.forth-discription-first,
+.forth-discription-second,
+.forth-prices {
+               margin: 37px 107px 60px 100px;
+}
+
+.forth-heading {
+               font-weight: 300;
+               font-size: 63px;
+               margin-bottom: 0px;
+               margin-right: 181px;
+}
+
+.forth-discription-first {
+               margin-top: 0;
+               text-align: end;
+               margin-right: 154px;
+               font-weight: 300;
+               
+}
+
+.forth-discription-first span {
+               font-weight: bold;
+}
+
+.forth-prices {
+               display: flex;
+               align-items: center;
+}
+
+.price {
+               font-weight: 700;
+               font-size: 45px;
+               margin-right: 20px;
+}
+
+.price-button {
+               color: white;
+               background: rgb(255, 0, 0);
+               border: 1px solid rgb(255, 0, 0);
+               border-radius: 25px;
+               padding: 11px 43px;
+
+}
+
+/* fifth section */
+
+.fifth {
+               grid-area: 3 / 1 / 4 / 3;
+               background-color: rgb(87, 87, 87);
+               display: flex;
+               justify-content: center;
+               flex-direction: column;
+               align-items: center;
+}
+
+.fifth article {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+}
+
+.fifth-heading {
+               font-size: 45px;
+               color: white;
+               font-weight: 100;
+}
+
+.fifth-heading span {
+               font-weight: 600;
+}
+
+.fifth article img {
+               padding-right: 20px;
+}
+
+.fifth a {
+
+               text-decoration: none;
+               color: white;
+               font-weight: 600;
+               font-size: 22px;
+               border-bottom: 1px solid rgb(223, 224, 227);
+               padding-bottom: 10px;
+               letter-spacing: 0.09re
+}
+
+
+
+/* Sixth  section*/
+
+.sixth img {
+               position: absolute;
+               top: -2px;
+               object-fit: cover;
+               width: 100%;
+               height: 100.2%;
+}
+
+
+
+
+/* Seventh section */
+
+.seventh {
+               background-color: rgb(218, 218, 218);
+               display: flex;
+               align-items: center;
+}
+
+.seventh div {
+               display: inline-block;
+               margin-left: 85px;
+               color: rgb(72, 72, 72);
+}
+
+.seventh div h2 {
+               font-size: 106px;
+               line-height: 1.1;
+}
+
+.seventh div p span {
+               color: rgb(255, 0, 0);
+               font-weight: 700;
+
+}
+
+.seventh div p {
+               font-size: 38px;
+               font-weight: 100;
+}
+
+.seventh img {
+               display: inline-block;
+               max-width: 35%;
+               position: absolute;
+               right: 10%;
+               top: 8%;
+
+}
+
+
+
+
+/* Footer section */
+footer {
+               font-size: 35px;
+               color: rgb(0, 0, 0);
+               text-align: center;
+               padding: 40px;
+               font-weight: 300;
+}
