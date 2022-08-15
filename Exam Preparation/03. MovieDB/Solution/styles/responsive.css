@@ -1,0 +1,22 @@
+@media all and (max-width: 600px) {
+               .main-movie-poster {
+                              display: none;
+               }
+
+               .main-movie ul {
+                              width: 100%;
+               }
+
+               iframe {
+                              width: 100%;
+               }
+
+               .main-movie ul li {
+                              padding: 0 0px;
+               }
+
+               .movie-list {
+                              flex-direction: column;
+                              align-items: center;
+                            }
+}
