@@ -108,15 +108,17 @@ header {
 
 .menu nav ul {
                display: flex;
+               color: rgb(200, 200, 200);
 }
 
 .menu nav ul li:nth-child(1) {
                padding-right: 30px;
+               
 }
 
 .menu nav ul li a {
                text-decoration: none;
-               color: white;
+               color: rgb(200, 200, 200);
 }
 
 h1 {
@@ -153,7 +155,7 @@ main h2 {
 .articles {
                flex-basis: 90%;
                display: grid;
-               grid-template-columns: 0.391fr 1fr;
+               grid-template-columns: 0.391fr 0.5fr;
                grid-template-rows: repeat(2, 1fr);
                grid-column-gap: 0px;
                grid-row-gap: 0px;
@@ -169,7 +171,7 @@ article:nth-child(1) {
                color: white;
                text-align: center;
                padding-top: 30px;
-               background-size: contain;
+               background-size: cover;
                background-repeat: no-repeat;
 }
 
@@ -191,7 +193,8 @@ article:nth-child(3){
                padding-left: 5px;
                background-size: cover;
                background-repeat: no-repeat;
-               background-position: center;
+               background-position: left;
+
 
 }
 
@@ -209,6 +212,7 @@ footer{
               justify-content: center;
               background-color: rgb(140, 140, 140);
               height: 15vh;
+              padding-right: 115px;
 
 }
 
