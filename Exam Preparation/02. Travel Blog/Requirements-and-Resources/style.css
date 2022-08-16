@@ -1,0 +1,237 @@
+/* Box sizing rules */
+*,
+*a::before,
+*::after {
+               box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+               margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+               list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+               scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+               min-height: 100vh;
+               text-rendering: optimizeSpeed;
+               line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+               text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+               max-width: 100%;
+               display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+               font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+               html:focus-within {
+                              scroll-behavior: auto;
+               }
+
+               *,
+               *::before,
+               *::after {
+                              animation-duration: 0.01ms !important;
+                              animation-iteration-count: 1 !important;
+                              transition-duration: 0.01ms !important;
+                              scroll-behavior: auto !important;
+               }
+}
+
+body {
+               font-family: "Gelasio", serif;
+}
+
+header {
+               width: 100%;
+               height: 87vh;
+               background: url(./images/map.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               text-align: center;
+               color: white;
+
+}
+
+
+.menu {
+
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               padding: 0 40px;
+
+}
+
+.logo {
+               flex-basis: 30%;
+}
+
+.logo img {
+               width: 10%;
+}
+
+.menu nav ul {
+               display: flex;
+}
+
+.menu nav ul li:nth-child(1) {
+               padding-right: 30px;
+}
+
+.menu nav ul li a {
+               text-decoration: none;
+               color: white;
+}
+
+h1 {
+               padding-top: 220px;
+               padding-bottom: 20px;
+               font-size: 61px;
+               text-shadow: 2px 1px black;
+}
+
+header button {
+               color: white;
+               background-color: #146594;
+               border: 0px;
+               border-radius: 3px;
+               padding: 9px 14px;
+
+}
+
+/* And of header */
+
+main {
+               background-color: #e1e1e1;
+               height: 87vh;
+               padding: 30px 100px;
+               display: flex;
+               flex-direction: column;
+}
+
+main h2 {
+               color: #53595c;
+               padding-bottom: 20px;
+}
+
+.articles {
+               flex-basis: 90%;
+               display: grid;
+               grid-template-columns: 0.391fr 1fr;
+               grid-template-rows: repeat(2, 1fr);
+               grid-column-gap: 0px;
+               grid-row-gap: 0px;
+               position: relative;
+               color: white;
+
+}
+
+article:nth-child(1) {
+               grid-area: 1 / 1 / 3 / 2;
+               background: url(./images/packing.jpg);
+               width: 100%;
+               color: white;
+               text-align: center;
+               padding-top: 30px;
+               background-size: contain;
+               background-repeat: no-repeat;
+}
+
+article:nth-child(2){
+               background: url(./images/planning.jpg);
+               text-align: center;
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-position: center;
+
+               
+}
+
+article:nth-child(3){
+               background: url(./images/budget.jpg);
+               display: flex;
+               align-items: flex-end;
+               padding-bottom: 24px;
+               padding-left: 5px;
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-position: center;
+
+}
+
+h3{
+               font-weight: normal;
+               text-shadow: 1px 1px black;
+               font-size: 25px;
+}
+
+
+
+footer{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: rgb(140, 140, 140);
+              height: 15vh;
+
+}
+
+footer section{
+               flex-basis: 35%;
+
+}
+
+footer section ul {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+}
+
+footer section ul li{
+               border-right: 1px solid rgb(201, 201, 201);
+               padding: 0 7px;
+}
+
+footer section ul li a{
+               text-decoration: none;
+               color: rgb(201, 201, 201);
+}
+
+
+
