@@ -115,7 +115,7 @@ section div {
     align-self: stretch;
     display: flex;
     width: 100%;
-    background-color: rgb(129, 157, 175);
+    background-color: rgb(134, 155, 174);
     border-radius: 7%;
     gap: 5%;
     align-content: flex-start;
@@ -132,5 +132,28 @@ div img {
 }
 
 .content {
-    
+    gap: 10px;
+}
+
+.content h2 {
+    margin: 0 24px;
+}
+
+.content p {
+    font-size: 15px;
+    margin: 0 24px;
+}
+
+button {
+    font-size: 11px;
+    margin: 0 24px;
+    background-color: rgb(50, 125, 196);
+    color: white;
+    letter-spacing: 0px;
+    border-radius: 25%;
+    padding: 5px 22px;
+    border-color: rgb(41, 58, 195);
+    border-width: 0.5px;
+    box-shadow: 0px 0px 1px 0.5px rgba(255,255,255,0.50);
+    font-weight: bold;
 }
