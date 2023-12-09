@@ -76,13 +76,14 @@ select {
 body {
     font-family: "Mulish", sans-serif;
     color: black;
-    margin: 30px 80px;
+    
 }
 
 main {
     display: flex;
     flex-direction: column;
     gap: 31px;
+    padding: 30px 80px 0 80px;
 }
 
 main div {
@@ -116,7 +117,7 @@ section div {
     display: flex;
     width: 100%;
     background-color: rgb(134, 155, 174);
-    border-radius: 7%;
+    border-radius: 19px;
     gap: 5%;
     align-content: flex-start;
     justify-content: flex-start;
@@ -128,7 +129,7 @@ div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 7%;
+    border-radius: 19px;
 }
 
 .content {
@@ -147,13 +148,13 @@ div img {
 button {
     font-size: 11px;
     margin: 0 24px;
-    background-color: rgb(50, 125, 196);
+    background-color: rgb(70, 110, 174);
     color: white;
     letter-spacing: 0px;
-    border-radius: 25%;
+    border-radius: 30px;
     padding: 5px 22px;
-    border-color: rgb(41, 58, 195);
+    border-color: rgb(61, 57, 183);
     border-width: 0.5px;
-    box-shadow: 0px 0px 1px 0.5px rgba(255,255,255,0.50);
+    box-shadow: 0px 0px 1px 0.5px rgba(255,255,255);
     font-weight: bold;
 }
