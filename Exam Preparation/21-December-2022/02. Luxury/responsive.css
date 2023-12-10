@@ -1,0 +1,89 @@
+@media screen and (max-width: 600px) {
+
+    html body {
+        font-size: 12px;
+    }
+
+    div.div-header {
+        display: none;
+    }
+
+    /* Gallery */
+
+    .gallery article div {
+        display: none;
+    }
+
+    div.blog-title h4 {
+        font-size: 20px;
+        
+    }
+
+    div.blog-title h4 span {
+        display: none;
+    }
+
+    /* Luxury portfolio */
+
+    div#about-blog {
+        width: 9 %;
+    }
+
+    .options {
+        display: flex;
+        justify-content: center;
+        /* padding-top: 35px; */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    section.options article {
+        text-align: center;
+        width: 100%;
+      }
+
+      section.options article h4{
+        font-size: 17px;
+      }
+      section.options article a{
+        display: none;
+      }
+
+    section.gallery {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .blog-title a,
+    .blog article img {
+        display: none;
+    }
+
+    #about-blog {
+        width: 69%;
+        height: 35%;
+        margin-top: 45px;
+    }
+
+    section.magazine article {
+        flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+    }
+
+    div.magazine-title {
+        padding: 40px 0 0 57px;
+    }
+
+    .magazine-title a {
+        display: none;
+    }
+
+    div.magazine-title h4{
+        font-size: 20px;
+
+    }
+}
