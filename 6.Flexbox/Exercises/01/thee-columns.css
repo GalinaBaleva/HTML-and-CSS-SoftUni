@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    background-color: rgb(238, 238, 238);
+    font: 14px/1.5 Lato, sans-serif;
+
+}
+
+.column-section {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.site {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* with div .columns */
+.three-columns {
+    background-color: rgb(255, 255, 255);
+    padding: 2em 3em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.three-columns>header,
+.three-columns>footer {
+    text-align: center;
+}
+
+.columns{
+    display: flex;
+    margin: 2em 0;
+    gap: 2em;
+}
+
+article>p{
+    font-weight: bold;
+}
+
+.three-columns article {
+    flex: 1 0 30%;
+}
+
+.three-columns > header > h2{
+    margin-bottom: 0.5em;
+}
+
+.three-columns > header > p{
+    max-width: 36%;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+.three-columns > footer > p{
+    max-width: 65%;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+.three-columns > header > p,
+.three-columns > footer > p{
+    font-style: italic;
+}
+
+
+
+.three-columns > header > p::after,
+.three-columns > footer > p::before{
+    display: block;
+    content: '';
+    width: 5em;
+    height: 2px;
+    background: rgb(238, 238, 238);
+    margin: 2em auto;
+}
+
+
+/* First way without div class columns */
+/* 
+.three-columns {
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.three-columns>header,
+.three-columns>footer {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+.three-columns article {
+    flex: 1 0 30%;
+}
+
+.three-columns > header > h2{
+    margin-bottom: 0.5em;
+}
+
+.three-columns > header > p{
+    max-width: 45%;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+.three-columns > footer > p{
+    max-width: 60%;
+    margin: 0 auto;
+    opacity: 0.7;
+} */
