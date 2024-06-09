@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(240, 240, 240);
+    font: 14px/1.5 Lato, sans-serif;
+    padding: 3em;
+}
+
+.container{
+    max-width:1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2em;
+}
+
+main{
+    flex: 1 0 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+aside{
+    flex: 1 0 30%;
+    display: flex;
+}
+
+article{
+    background: white;
+    padding: 2em;
+}
+
+main > article{
+    display: flex;
+    gap: 1em;
+
+}
+
+.main-article{
+    flex: 0 1 65%;
+}
+
+.main-article > .animation{
+    flex: 1 0 25%;
+}
+
+.content i{
+    font-size: 50px;
+}
+
+.content > *:not(:first-child){
+    padding-top: 2em;
+}
+
+h3{
+    font-weight: 900;
+}
+
+.content p{
+    opacity: 0.6;
+}
+
+.animation{
+    overflow: hidden;
+    flex: 0 0 30%;
+    aspect-ratio: 1/1;
+    position: relative;
+    border-radius: 50%;
+    background: #090;
+    border: 5px solid #fff;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+    width: 40%;
+}
+
+.animation img{
+    width: 100%;
+
+}
+
+.special{
+    margin-top: 2em;
+
+}
+
