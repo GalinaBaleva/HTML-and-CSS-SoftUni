@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: lightblue url(./image/background.jpg) no-repeat fixed center;
+    font: 14px/1.5 Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 1100px;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.article {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    line-height: 2;
+
+}
+
+.standart {
+    align-self: stretch;
+    padding: 1.5em;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pricing {
+    color: rgb(66, 66, 66);
+}
+
+.pricing span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+
+}
+
+.annualy {
+    opacity: 0.6;
+    font-size: 0.7rem;
+}
+
+i {
+    padding-right: 0.4em;
+}
+
+button {
+    width: 40%;
+    padding: 1em;
+    background: black;
+    color: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em  0 rgb(0, 0, 0, 0.2);
+}
+
+
+.standart button {
+    margin-top: 3em;
+}
