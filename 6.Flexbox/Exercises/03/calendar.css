@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(238, 238, 238);
+    padding: 2em;
+    font: 14xp/1.5 Lato, sans-serif;
+}
+
+.calender{
+    max-width: 900px;
+    max-height: 340px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0 0 2em 0, rgb(0, 0, 0, 0.1);
+    display: flex;
+    padding: 0.2em;
+    text-align: center;
+
+}
+
+.calender div{
+    padding: 2em;
+    border: 1px solid rgb(204, 204, 204);
+    flex-grow: 1;
+}
+
+.week{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.notes{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.week div:nth-child(1),
+.week div:nth-child(7){
+ flex: 0 0 100%;
+}
+
+

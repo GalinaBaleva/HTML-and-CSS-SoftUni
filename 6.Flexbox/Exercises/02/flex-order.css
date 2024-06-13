@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 238, 238);
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+.site{
+    max-width: 900px;
+    height: 250px;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 3em auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+}
+
+.site > * {
+    border: 1px solid gray;
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+header, 
+footer{
+    flex: 1 0 100%
+}
+
+main{
+    flex: 1 0 60%;
+}
+
+aside{
+    flex: 1 0 auto;
+}
+
+
+.order header{ order: 1;}
+.order main{ order: 3;}
+.order aside{ order: 2;}
+.order footer{ order: 4;}
+
