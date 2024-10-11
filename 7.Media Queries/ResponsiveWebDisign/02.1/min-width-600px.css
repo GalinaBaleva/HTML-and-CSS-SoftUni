@@ -1,0 +1,8 @@
+.site-header nav ul {
+    flex-direction: row;
+    align-items: left;
+}
+
+body{
+    background: red;
+}
