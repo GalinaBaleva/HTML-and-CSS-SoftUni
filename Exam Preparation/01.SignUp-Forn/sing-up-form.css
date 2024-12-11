@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 "Kode Mono", "sans-serif";
+}
+
+body,
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+body {
+    background: #C1BDBA;
+    padding: 2em;
+
+}
+
+form {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #24333C;
+    padding: 4em;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.nav li {
+    list-style: none outside;
+    color: inherit;
+    flex: 1 1 49%;
+}
+
+.nav li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    padding: 1em 1em;
+    background: #435359;
+    text-align: center;
+
+}
+
+.nav li .activ{
+    background: #1AB188;
+
+}
+
+.nav li :hover{
+    background:#179A77
+}
+
+h2 {
+    text-align: center;
+    margin: 2em;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    gap: 2em;
+}
+
+.field{
+    display: block;
+    position: relative;
+}
+
+.field input{
+    padding: 0.5em 1em;
+    background: inherit;
+    display: block;
+    width: 100%;
+    border: 1px solid #A0B3B0;
+    border-radius: 0.3px;
+}
+
+.wrapper .first-line{
+    display: flex;
+    gap: 1.2em ;
+}
+
+
+.wrapper .first-line .field{
+    flex: 1 0 45%;
+}
+
+.field label{
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    color: #A0B3B0;
+}
+
+.field label::after{
+    content: "*";
+    color: #179A77;
+}
+
+.submit{
+    display: block;
+    width: 100%;
+    background: #1AB188;
+    color: inherit;
+    border: 0px;
+    padding: 1em;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+
